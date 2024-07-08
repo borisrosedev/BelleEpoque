@@ -1,0 +1,19 @@
+@use "../abstracts/keyframes";
+
+.custom-notification {
+  position: fixed;
+  bottom: 10px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: vanish-down 2000ms ease-in-out 1000ms forwards;
+  p {
+    padding: 10px;
+    font-size: small;
+  }
+}

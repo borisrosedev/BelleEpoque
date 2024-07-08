@@ -1,0 +1,29 @@
+.dashboard {
+  &__main {
+    align-items: center;
+    justify-content: center;
+
+    & > section:has(button) {
+      margin-top: 20px;
+    }
+  }
+
+  &__user-data {
+    display: flex;
+
+    border: solid white 2px;
+    width: 50%;
+    align-self: center;
+
+    & > section {
+      display: flex;
+      width: calc(100% / 3);
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

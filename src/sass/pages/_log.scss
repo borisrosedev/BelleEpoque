@@ -1,0 +1,31 @@
+@use "../abstracts/variables";
+
+.log {
+  &__main {
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(/assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    background-blend-mode: color;
+
+    & > section:nth-child(1) {
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+      border: white 2px solid;
+      padding: 10px;
+      small {
+        margin-top: 10px;
+        align-self: center;
+        a {
+          color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}

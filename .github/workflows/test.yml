@@ -1,0 +1,57 @@
+name: Test Prettier and Eslint Check
+run-name: ${{ github.actor }} is running the form check
+on:
+    push:
+        branches:
+            - master
+permissions:
+    contents: read
+jobs:
+    format-and-test:
+        outputs: 
+          jest-output: ${{ steps.jest.outputs.result}}
+
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Put the App Folder into the executor virtual machine"
+              uses: actions/checkout@v4
+            
+            - name: "Install Node.js"
+              uses: actions/setup-node@v4
+              with:
+                node-version-file: .node-version
+                cache: npm
+
+
+            - name: "Install Dependencies"
+              run: npm install
+
+            - name: "Check if Prettier Formatted"
+              id: prettier
+              run: npm run format:check
+
+
+            - name: "Check if Eslint Formatter"
+              id: eslint
+              if: ${{ success() && steps.prettier.conclusion == 'success' }}
+              run: npm run lint
+
+
+            - name: "Run Tests"
+              id: jest
+              if: ${{ success() && steps.eslint.conclusion == 'success' }}
+              run: | 
+                    npm run test
+                    echo "result=✅ All Good !!" >> "$GIT_OUTPUT"
+
+            - name: "Conclusion"
+              if: ${{ success() && steps.jest.conclusion == 'success' }}
+              run: echo "$JEST"
+    test-conclusion:
+      runs-on: macos-latest
+      needs: format-and-test
+      steps:
+        - env:
+            JEST-OUTPUT: ${{ needs.format-and-test.outputs.jest-output }}
+          run: echo "$JEST-OUTPUT"
+
