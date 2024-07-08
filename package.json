@@ -5,11 +5,12 @@
   "scripts": {
     "test": "jest",
     "start": "webpack serve --mode development --open --watch",
-    "linte": "npx eslint .",
+    "lint": "npx eslint .",
     "format:write": "npx prettier --write .",
     "package": "webpack --mode production",
     "format:check": "npx prettier --check .",
-    "coverage": "npm test -- --coverage && make-coverage-badge"
+    "coverage": "npm test -- --coverage && make-coverage-badge",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",

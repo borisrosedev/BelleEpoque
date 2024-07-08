@@ -1,52 +1,49 @@
 .list-item {
+  display: flex;
+  background-color: #fff;
+  height: 100px;
+  width: 50%;
+  margin-block: 10px;
+
+  color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
+
+  section {
     display: flex;
-    background-color: #fff;
-    height: 100px;
-    width: 50%;
-    margin-block: 10px;
- 
-    color: #000;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 5px #000;
-  
+  }
+  & > section:nth-child(1) {
+    width: 30%;
+    figure {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
+  & > section:nth-child(2) {
+    width: 40%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     section {
-        display: flex;
+      flex-direction: column;
     }
-    & > section:nth-child(1) {
-        width: 30%;
-        figure {
-            width: 100%;
-            height: 100%;
-        }
-    }
+  }
 
-    & > section:nth-child(2){
-        width: 40%;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        section {
-            flex-direction: column;
-        }
-    }
+  & > section:nth-child(3) {
+    align-items: center;
+    margin-inline: 5px;
+    width: 30%;
 
-    & > section:nth-child(3){
-        align-items: center;
-        margin-inline: 5px;
-        width:30%;
-
-        button:hover {
-            background-color: rgb(228, 174, 12);
-        }
+    button:hover {
+      background-color: rgb(228, 174, 12);
     }
-  
+  }
 
-    //media queries
-    @media (0<= width <= 714px) {
-        width: 100%;
-    }
-    
+  //media queries
+  @media (0<= width <= 714px) {
+    width: 100%;
+  }
 }

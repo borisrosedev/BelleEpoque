@@ -1,21 +1,16 @@
 .home {
-    &__main {
-      background-image: url(/assets/bg.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      justify-content: center;
-      
+  &__main {
+    background-image: url(/assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
 
-      & > section:first-of-type {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self:  center;
- 
-   
-      }
-   
+    & > section:first-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
     }
   }
-  
+}

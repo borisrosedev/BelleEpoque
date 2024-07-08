@@ -1,15 +1,12 @@
-import customTitle from "../../components/custom-title/custom-title";
+import customTitle from "../../components/custom-title/custom-title"
 
-export default function(){
+export default function () {
+  const data = {
+    className: "custom-title--h1",
+    textContent: "Page | Accueil"
+  }
 
-    const data = {
-        className: 'custom-title--h1',
-        textContent: 'Page | Accueil' 
-    }
-
-
-    return(
-        `
+  return `
             <main class="main home__main">
                 ${customTitle(data)}
                 <section class="section">     
@@ -20,5 +17,4 @@ export default function(){
             </main>
         
         `
-    )
 }

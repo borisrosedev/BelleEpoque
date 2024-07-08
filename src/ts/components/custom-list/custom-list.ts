@@ -1,8 +1,7 @@
-import itemCard from "../item-card/item-card";
+import itemCard from "../item-card/item-card"
 
-export default function(data: any[]){
-    return(
-        `
+export default function (data: any[]) {
+  return `
             <ul clas="list">
 
                 ${data.map((el: any) => itemCard(el)).join("")}
@@ -11,5 +10,4 @@ export default function(data: any[]){
             
         
         `
-    )
 }

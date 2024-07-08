@@ -4,29 +4,35 @@ const CopyPlugin = require("copy-webpack-plugin")
 //const { VueLoaderPlugin } = require("vue-loader")
 
 module.exports = {
+  // -------------
   entry: "./main.ts",
+  // -------------
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true
   },
+  // -------------
   mode: "development",
-  watchOptions: {
-    ignored: /node_modules/
-  },
-  watch: true,
+  // -------------
+  // watchOptions: {
+  //   ignored: /node_modules/
+  // },
+  // // -------------
+  // watch: true,
   resolve: {
     // alias: {
     //   vue$: "vue/dist/vue.esm-browser.js"
     // },
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
+  // -------------
   module: {
     rules: [
-    //   {
-    //     test: /\.vue$/,
-    //     loader: "vue-loader"
-    //   },
+      //   {
+      //     test: /\.vue$/,
+      //     loader: "vue-loader"
+      //   },
       {
         test: /\.tsx?$/,
         use: "ts-loader",
@@ -49,6 +55,7 @@ module.exports = {
       }
     ]
   },
+  // -------------
   plugins: [
     //new VueLoaderPlugin(),
     new CopyPlugin({
@@ -63,6 +70,7 @@ module.exports = {
         }
       ]
     }),
+
     new HtmlPlugin({
       template: "index.html",
       title: "Development"

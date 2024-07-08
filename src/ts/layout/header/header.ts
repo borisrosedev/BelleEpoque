@@ -1,5 +1,5 @@
 const navBar = (): string => {
-    return `
+  return `
               <nav>
                   <a href=""
                       <span aria-label="icone de la page d'accueil">
@@ -20,10 +20,10 @@ const navBar = (): string => {
               </nav>
           
           `
-  }
-  
-  export default function (): string {
-    return `
+}
+
+export default function (): string {
+  return `
               <header class="header header--app">
                   <a 
                       class="home-link"
@@ -41,5 +41,4 @@ const navBar = (): string => {
               </header>
           
           `
-  }
-  
+}
