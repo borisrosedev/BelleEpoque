@@ -1,0 +1,43 @@
+{
+  "mains": [
+    {
+      "id": 1,
+      "name": "Sandwich au saumon",
+      "url": "https://cdn.pixabay.com/photo/2024/02/28/06/56/ai-generated-8601396_1280.png"
+    },
+    {
+      "id": 2,
+      "name": "Pancakes végétariens",
+      "url": "https://cdn.pixabay.com/photo/2022/03/07/16/57/beetroot-7054110_1280.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Toast aux oeufs",
+      "url": "https://cdn.pixabay.com/photo/2015/04/13/18/51/fried-721080_1280.jpg"
+    }
+  ],
+
+  "drinks": [],
+
+  "appetizers": [
+    {
+      "id": 1,
+      "name": "Assiette de fromages",
+      "price": 20,
+      "url": "https://cdn.pixabay.com/photo/2024/06/13/10/35/cheese-8827229_1280.jpg"
+    }
+  ],
+
+  "desserts": [
+    {
+      "id": 1,
+      "name": "framboises",
+      "url": "https://cdn.pixabay.com/photo/2017/01/31/09/31/raspberry-2023410_1280.jpg"
+    },
+    {
+      "id": 2,
+      "name": "crêpes",
+      "url": "https://cdn.pixabay.com/photo/2019/01/10/20/32/pancakes-3926010_1280.jpg"
+    }
+  ]
+}

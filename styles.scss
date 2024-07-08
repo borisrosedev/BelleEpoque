@@ -1,0 +1,18 @@
+@use './src/sass/vendor/bulma';
+@use "./src/sass/base/typography";
+@use "./src/sass/abstracts/variables";
+@use "./src/sass/abstracts/keyframes";
+@use "./src/sass/base/base";
+
+//----------------COMPONENTS
+@use './src/sass/components/custom-title';
+@use './src/sass/components/list-item';
+@use './src/sass/components/message';
+
+//----------------LAYOUT
+@use "./src/sass/layout/header";
+
+//-----------------PAGES
+@use "./src/sass/pages/home";
+@use "./src/sass/pages/menu";
+

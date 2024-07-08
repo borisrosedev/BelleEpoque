@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "firstname": "Sarah",
+    "lastname": "Monk",
+    "email": "sarah@gmail.com",
+    "password": "caroline",
+    "url": "https://cdn.pixabay.com/photo/2023/12/27/05/29/woman-8471396_1280.jpg",
+    "wallet": 200
+  },
+  {
+    "id": 2,
+    "firstname": "Louise",
+    "lastname": "Dupont",
+    "email": "louise@gmail.com",
+    "password": "caroline",
+    "url": "https://cdn.pixabay.com/photo/2024/03/21/04/39/ai-generated-8646814_1280.png",
+    "wallet": 200
+  },
+  {
+    "id": 3,
+    "firstname": "Justin",
+    "lastname": "Nigma",
+    "email": "justin@gmail.com",
+    "password": "mystere",
+    "url": "https://cdn.pixabay.com/photo/2020/01/07/23/01/sketch-4748895_1280.jpg",
+    "wallet": 300
+  }
+]

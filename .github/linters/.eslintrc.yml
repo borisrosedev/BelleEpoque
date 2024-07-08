@@ -1,0 +1,54 @@
+env:
+  commonjs: true
+  es6: true
+  jest: true
+  node: true
+
+ignorePatterns:
+  - "!.*"
+  - "**.test.ts"
+  - "**.spec.ts"
+  - "**/node_modules/.*"
+  - "**/dist/.*"
+  - "**/coverage/.*"
+  - "*.json"
+  - "**/types/*.d.ts"
+  - "**/__test__/*.ts"
+  - "**webpack.config.js"
+  - "**/cypress"
+  - "cypress.config.ts"
+
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  ecmaVersion: 2023
+  sourceType: module
+  requireConfigFile: false
+  project: "./tsconfig.json"
+
+plugins:
+  - "@typescript-eslint"
+  - jest
+  - prettier
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:github/recommended
+  - plugin:jest/recommended
+  - plugin:prettier/recommended
+
+rules:
+  camelcase: "off"
+  eslint-plugin-import/no-anonymous-default-export: "off"
+  import/no-anonymous-default-export: "off"
+  prettier/prettier: "error"
+  import/no-commonjs: "off"
+  eslint-comments/no-use: "off"
+  eslint-comments/no-unlimited-disable: "off"
+  no-unused-vars: "off"
+  no-undef: "off"
+  eqeqeq: "off"
+  no-console: "off"
+  typescript-eslint/no-var-requires: "off"
+  typescript-eslint/no-unused-vars: "off"
